@@ -19,7 +19,7 @@ public class CalculationsTest {
         assertEquals(5, calculationsUnderTest.calculate(Operation.SUM, 2, 3), 0.01);
     }
     @Test
-    public void testMult() throws Exception {
+    public void testMulti() throws Exception {
         assertEquals(6, calculationsUnderTest.calculate(Operation.MULTIPLY, 2, 3), 0.01);
     }
 
