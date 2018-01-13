@@ -18,6 +18,20 @@ public class CalculationsTest {
     public void testSum() throws Exception {
         assertEquals(5, calculationsUnderTest.calculate(Operation.SUM, 2, 3), 0.01);
     }
+    @Test
+    public void testMult() throws Exception {
+        assertEquals(6, calculationsUnderTest.calculate(Operation.MULTIPLY, 2, 3), 0.01);
+    }
+
+    @Test
+    public void testSubtract() throws Exception {
+        assertEquals(9, calculationsUnderTest.calculate(Operation.SUBTRACT, 12, 3), 0.01);
+    }
+
+    @Test
+    public void testDiv() throws Exception {
+        assertEquals(6, calculationsUnderTest.calculate(Operation.DIVIDE, 12, 2), 0.01);
+    }
 
     @After
     public void tearDown() {
